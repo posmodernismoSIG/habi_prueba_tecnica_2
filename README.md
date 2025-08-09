@@ -20,3 +20,44 @@ Es simple pero bien organizada. Cada método tiene una responsabilidad específi
 Para asegurarme de que todo funciona bien, también implementaré una clase TestBlockProcessor usando unittest. Esta clase tendrá varios métodos de test para probar diferentes escenarios: el ejemplo básico, bloques vacíos, arreglos sin ceros, solo ceros, etc.
 
 La idea es mantener todo simple pero funcional, sin complicaciones innecesarias.
+
+
+---
+
+# Instalación y Uso
+
+### Clonar el repositorio
+```bash
+git clone https://github.com/posmodernismoSIG/habi_prueba_tecnica_2.git
+cd habi_prueba_tecnica_2
+```
+
+### Ejecutar el programa
+```bash
+# Modo demo (ingresa números por consola)
+python main.py
+
+# Ejemplo de entrada: 1,3,2,0,7,8,1,3,0,6,7,1
+# Resultado esperado: 123 1378 167
+```
+
+### Ejecutar tests
+```bash
+# Correr toda la suite de pruebas
+python main.py test
+```
+
+## 📋 Requisitos
+
+- Python 3.6+
+- No requiere dependencias externas
+
+## 🧪 Ejemplo de uso
+
+**Entrada:** `[1, 3, 2, 0, 7, 8, 1, 3, 0, 6, 7, 1]`  
+**Salida:** `"123 1378 167"`
+
+Los ceros dividen el arreglo en bloques, cada bloque se ordena, y los bloques vacíos se representan como "X".
+
+---
+**Autor:** Joan Sebastian Diaz Gomez
